@@ -8,7 +8,7 @@ namespace EssexMums\Theme;
 define( 'WPT_DIR', get_template_directory() );
 
 require_once( WPT_DIR . '/app/ThemeManager.php' );
-require_once( WPT_DIR . '/app/Comments.php' );
+require_once( WPT_DIR . '/app/CommentsManager.php' );
 
 new ThemeManager();
 new CommentsManager();
