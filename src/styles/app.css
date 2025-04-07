@@ -1,0 +1,8 @@
+/* Globals */
+@import "./globals/reset.css";
+
+/* Blocks */
+@import "./blocks/categories-list.css";
+@import "./blocks/cover.css";
+@import "./blocks/query.css";
+@import "./blocks/button.css";
