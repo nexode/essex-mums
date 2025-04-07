@@ -2,7 +2,7 @@
 
 namespace EssexMums\Theme;
 
-class Comments {
+class CommentsManager {
     public function __construct() {
         // Hide comments from the admin menu
         add_action( 'admin_menu', [ $this, 'hide_comments' ] );

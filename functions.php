@@ -11,4 +11,4 @@ require_once( WPT_DIR . '/app/ThemeManager.php' );
 require_once( WPT_DIR . '/app/Comments.php' );
 
 new ThemeManager();
-new Comments();
+new CommentsManager();
