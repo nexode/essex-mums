@@ -1,8 +1,15 @@
 /* Globals */
 @import "./globals/reset.css";
+@import "./globals/forms.css";
 
 /* Blocks */
 @import "./blocks/categories-list.css";
 @import "./blocks/cover.css";
 @import "./blocks/query.css";
 @import "./blocks/button.css";
+
+/* Parts */
+@import "./parts/footer.css";
+
+/*  Patterns */
+@import "./patterns/newsletter.css";

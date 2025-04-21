@@ -1,0 +1,29 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp--preset--spacing--48);
+}
+
+@media (min-width: 840px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 30% 1fr;
+    }
+}
+
+@media (min-width: 840px) {
+    .left-align {
+        text-align: left !important;
+    }
+    .flex-start {
+        align-items: flex-start !important;
+    }
+    .footer-grid ul {
+        align-items: flex-start !important;
+    }
+}

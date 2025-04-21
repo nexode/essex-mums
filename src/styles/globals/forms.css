@@ -1,0 +1,72 @@
+.frm_form_fields fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.frm_fields_container {
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex-direction: column !important;
+    gap: var(--wp--preset--spacing--08) !important;
+    width: 100%;
+}
+
+.frm_fields_container br {
+    display: none !important;
+}
+
+.newsletter-mail-input label {
+    display: none;
+}
+
+.newsletter-mail-input input {
+    background-color: var(--wp--preset--color--white);
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.newsletter-mail-input input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--wp--preset--color--pink-hero);
+}
+
+.newsletter-submit .frm_submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newsletter-submit .frm_submit button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-family: inherit;
+    color: var(--wp--preset--color--neutral-100);
+    font-size: var(--wp--preset--font-size--body-large);
+    font-weight: 500;
+    padding: 0.5625rem var(--wp--preset--spacing--32);
+    border-radius: 8px;
+    background-color: var(--wp--preset--color--pink-hero) !important;
+    color: var(--wp--preset--color--white);
+    border: none;
+    cursor: pointer;
+}
+
+#form_newsletter-signup .frm_error {
+    font-size: var(--wp--preset--font-size--body-small);
+    color: red;
+    margin-top: 0.5rem;
+}
+
+#form_newsletter-signup .frm_error_style {
+    display: none !important;
+    margin-bottom: 0.5rem;
+}
+
+.frm_forms {
+    width: 100%;
+}
