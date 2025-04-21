@@ -47,3 +47,43 @@
         }
     }
 }
+
+.wp-block-post-template {
+    gap: var(--wp--preset--spacing--48) var(--wp--preset--spacing--16);
+}
+
+.wp-block-post {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp--preset--spacing--16);
+}
+
+.wp-block-post-inner {
+    height: 100%;
+}
+
+.wp-block-post h3 a,
+.wp-block-post .wp-block-read-more {
+    transition: var(--wp--custom--transition);
+}
+
+.wp-block-post h3 a:hover,
+.wp-block-post .wp-block-read-more:hover {
+    text-decoration: none;
+    color: var(--wp--preset--color--teal-hero) !important;
+}
+
+.wp-block-post-featured-image {
+    overflow: hidden;
+}
+
+.wp-block-post-featured-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: var(--wp--custom--transition);
+}
+
+.wp-block-post-featured-image img:hover {
+    transform: scale(1.1);
+}
