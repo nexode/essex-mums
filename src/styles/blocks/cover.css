@@ -1,6 +1,6 @@
 @media (max-width: 839px) {
     /* all cover blocks should be at least 24rem tall on mobile */
-    .wp-block-cover:not(.no-min-height) {
+    .wp-block-cover:not(.cover-banner) {
         min-height: 24rem !important;
     }
 }
@@ -8,4 +8,8 @@
 .wp-block-cover,
 .wp-block-cover-image {
     width: 100%;
+}
+
+.cover-home {
+    margin-bottom: var(--wp--custom--margin--block);
 }
