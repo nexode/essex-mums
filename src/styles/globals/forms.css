@@ -54,6 +54,11 @@
     color: var(--wp--preset--color--white);
     border: none;
     cursor: pointer;
+    transition: var(--wp--custom--transition);
+}
+
+.newsletter-submit .frm_submit button:hover {
+    background-color: var(--wp--preset--color--teal-hero) !important;
 }
 
 #form_newsletter-signup .frm_error {

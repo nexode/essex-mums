@@ -1,0 +1,7 @@
+.wp-block-emb-button {
+    transition: var(--wp--custom--transition);
+}
+
+.wp-block-emb-button.has-pink-hero-background-color:hover {
+    background-color: var(--wp--preset--color--teal-hero) !important;
+}
