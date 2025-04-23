@@ -1,0 +1,37 @@
+.hero-links {
+    gap: 2rem;
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
+.hero-link {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .hero-link {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 840px) {
+    .hero-links {
+        gap: 3rem;
+    }
+
+    .hero-link {
+        width: calc(33.3333% - 3rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-links {
+        gap: 6rem;
+    }
+
+    .hero-link {
+        width: calc(33.33% - 4rem);
+    }
+}
