@@ -19,3 +19,7 @@ ul {
 html {
     scroll-behavior: smooth;
 }
+
+.gmb {
+    margin-bottom: var(--wp--custom--margin--block) !important;
+}
