@@ -12,15 +12,15 @@
         width: 100%;
 
         & img {
-            max-height: 24rem;
+            height: 11rem;
             border-radius: 1rem;
         }
     }
 
     .taxonomy-category {
         position: absolute;
-        top: 1.5rem;
-        left: 1.5rem;
+        top: 2rem;
+        left: 2rem;
 
         & a {
             background-color: var(--wp--preset--color--white);
@@ -86,4 +86,94 @@
 
 .wp-block-post-featured-image img:hover {
     transform: scale(1.1);
+}
+
+.wp-block-query-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--wp--preset--spacing--16);
+    margin-top: var(--wp--preset--spacing--48);
+
+    & .wp-block-query-pagination-previous {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        & .is-arrow-chevron {
+            margin: 0;
+        }
+    }
+}
+
+.wp-block-query-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--wp--preset--spacing--16);
+
+    & .wp-block-query-pagination-previous {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &:hover {
+            text-decoration: none;
+            background-color: var(--wp--preset--color--teal-hero);
+        }
+
+        & .is-arrow-chevron {
+            margin: 0 0 2px 0;
+        }
+    }
+
+    & .wp-block-query-pagination-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+            text-decoration: none;
+            background-color: var(--wp--preset--color--teal-hero);
+        }
+
+        & .is-arrow-chevron {
+            margin: 0 0 2px 0;
+        }
+    }
+
+    .wp-block-query-pagination-numbers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--wp--preset--spacing--08);
+
+        & .page-numbers:not(.dots):not(.current) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+
+            &:hover {
+                text-decoration: none;
+                background-color: var(--wp--preset--color--teal-hero);
+            }
+        }
+
+        & .page-numbers.current {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--wp--preset--color--teal-hero);
+        }
+    }
 }
