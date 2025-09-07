@@ -1,0 +1,23 @@
+.wp-block-categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--wp--preset--spacing--24);
+    list-style: none;
+    padding: 0;
+
+    & li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        background-color: hsla(0, 0%, 0%, 0.04);
+        border-radius: 1.5rem;
+        transition: var(--wp--custom--transition);
+        text-decoration: none;
+
+        &:hover {
+            background-color: hsla(0, 0%, 0%, 0.08);
+        }
+    }
+}

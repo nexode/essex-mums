@@ -1,0 +1,17 @@
+{
+    "name": "essex-mums",
+    "version": "0.3.2",
+    "description": "wordpress theme",
+    "author": "Matt Cooley",
+    "license": "ISC",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "watch": "vite build --watch"
+    },
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "vite": "^5.4.14"
+    }
+}

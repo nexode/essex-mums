@@ -1,0 +1,16 @@
+.newsletter {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: var(--wp--preset--spacing--24);
+}
+
+.newsletter .frm_forms {
+    width: 100%;
+}
+
+@media (min-width: 840px) {
+    .newsletter {
+        grid-template-columns: 1fr 25rem;
+        gap: var(--wp--preset--spacing--48);
+    }
+}

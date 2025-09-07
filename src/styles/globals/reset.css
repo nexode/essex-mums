@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+iframe {
+    border: 0;
+}
+
+ul {
+    padding-inline-start: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gmb {
+    margin-bottom: var(--wp--custom--margin--block) !important;
+}

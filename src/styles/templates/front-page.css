@@ -1,0 +1,19 @@
+.front-hero {
+    position: relative;
+}
+
+.front-links {
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .front-links {
+        display: block;
+    }
+    .front-hero {
+        margin-bottom: 120px;
+    }
+}

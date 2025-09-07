@@ -1,0 +1,11 @@
+.single-post .post-content p {
+    color: var(--wp--preset--color--half-black);
+}
+
+.single-post .post-content a {
+    text-decoration: underline;
+}
+
+.single-post .post-content a:hover {
+    color: var(--wp--preset--color--teal-hero);
+}
