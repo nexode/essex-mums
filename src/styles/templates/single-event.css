@@ -1,0 +1,27 @@
+.single-event-content main {
+    flex-direction: column !important;
+}
+
+.single-event-content main > * {
+    width: 100%;
+}
+
+.single-event-content main .entry-content > * {
+    max-width: var(--wp--style--global--wide-size);
+}
+
+@media (min-width: 1200px) {
+    .single-event-content main {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: var(--wp--preset--spacing--80) !important;
+    }
+
+    .single-event-content main > *:first-child {
+        width: 60%;
+    }
+
+    .single-event-content main > *:last-child {
+        width: 40%;
+    }
+}

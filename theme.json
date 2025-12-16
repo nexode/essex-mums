@@ -33,6 +33,11 @@
                     "color": "#a8e7e9"
                 },
                 {
+                    "name": "Dark Blue",
+                    "slug": "dark-blue",
+                    "color": "#022E4F"
+                },
+                {
                     "name": "True Black",
                     "slug": "true-black",
                     "color": "#000000"
@@ -140,6 +145,21 @@
                             "fontFamily": "Roboto"
                         }
                     ]
+                },
+                {
+                    "name": "Complete in Him",
+                    "slug": "complete-in-him",
+                    "fontFamily": "'Complete in Him', serif",
+                    "fontFace": [
+                        {
+                            "src": [
+                                "file:./assets/fonts/complete-in-him/complete-in-him.ttf"
+                            ],
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontFamily": "Complete in Him"
+                        }
+                    ]
                 }
             ],
             "fontSizes": [
@@ -217,12 +237,39 @@
                 },
                 {
                     "fluid": {
-                        "min": "2.5rem",
-                        "max": "3.75rem"
+                        "min": "3.75rem",
+                        "max": "5rem"
                     },
                     "name": "Display Large",
-                    "size": "3.75rem",
+                    "size": "5rem",
                     "slug": "display-large"
+                },
+                {
+                    "fluid": {
+                        "min": "4.5rem",
+                        "max": "6rem"
+                    },
+                    "name": "Display X Large",
+                    "size": "6rem",
+                    "slug": "display-x-large"
+                },
+                {
+                    "fluid": {
+                        "min": "5.25rem",
+                        "max": "7rem"
+                    },
+                    "name": "Display XX Large",
+                    "size": "7rem",
+                    "slug": "display-xx-large"
+                },
+                {
+                    "fluid": {
+                        "min": "6rem",
+                        "max": "8rem"
+                    },
+                    "name": "Display Huge",
+                    "size": "8rem",
+                    "slug": "display-huge"
                 }
             ],
             "writingMode": true

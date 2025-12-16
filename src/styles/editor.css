@@ -3,3 +3,5 @@
 @import "./blocks/cover.css";
 @import "./blocks/query.css";
 @import "./blocks/button.css";
+
+@import "./templates/single-event.css";
