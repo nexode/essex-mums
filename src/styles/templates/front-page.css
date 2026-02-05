@@ -1,19 +1,16 @@
-.front-hero {
-    position: relative;
+/* Featured Blogs */
+
+.blog_query-category {
+    position: relative !important;
+    padding: 0;
+    margin: 0;
+    inset: 0 !important;
 }
 
-.front-links {
-    position: absolute;
-    width: 100%;
-    bottom: -150px;
-    display: none;
-}
-
-@media only screen and (min-width: 1200px) {
-    .front-links {
-        display: block;
-    }
-    .front-hero {
-        margin-bottom: 120px;
-    }
+.blog_query-category a {
+    pointer-events: none;
+    padding: 0 !important;
+    margin: 0;
+    font-size: small;
+    color: #737373;
 }

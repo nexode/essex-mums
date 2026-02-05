@@ -11,6 +11,7 @@ class ThemeManager
         add_action('wp_enqueue_scripts', [$this, 'enqueue_styles_and_scripts']);
         add_action('enqueue_block_assets', [$this, 'register_theme_editor_styles']);
         add_action('init', [$this, 'register_pattern_categories']);
+        add_action('wp_head', [$this, 'print_sender_snippet'], 99);
     }
 
     /**
@@ -87,6 +88,17 @@ class ThemeManager
     private function enqueue_scripts(): void
     {
         wp_enqueue_script('essex-mums-main');
+
+        // Add inline JS to dynamically update the copyright year
+        $inline_js = "
+            document.addEventListener('DOMContentLoaded', function() {
+                var el = document.getElementById('copyright-year');
+                if (el) {
+                    el.textContent = new Date().getFullYear();
+                }
+            });
+        ";
+        wp_add_inline_script('essex-mums-main', $inline_js);
     }
 
     /**
@@ -129,5 +141,35 @@ class ThemeManager
             return get_template_directory_uri() . $relative_path;
         }
         return null;
+    }
+
+    public function print_sender_snippet(): void
+    {
+        // Front-end only; skip admin/editor screens
+        if (is_admin()) {
+            return;
+        }
+
+        // Optional: restrict to public pages only
+        // if (!is_singular() && !is_front_page() && !is_home()) return;
+
+        $snippet = <<<'HTML'
+    <script>
+    (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+        (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+    sender('555ceab3302032')
+    </script>
+    HTML;
+
+        echo $snippet;
     }
 }

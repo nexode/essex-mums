@@ -1,0 +1,5 @@
+.whats-on_links a:hover .wp-block-cover__background {
+    background-color: #ffffff00!important;
+    background: linear-gradient(180deg,rgba(64, 205, 210, 0) 0%, rgba(64, 205, 210, 1) 62%);
+    opacity: 0.8!important;
+}
