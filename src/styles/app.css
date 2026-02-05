@@ -13,8 +13,9 @@
 
 /*  Patterns */
 @import "./patterns/newsletter.css";
-@import "./patterns/hero-links.css";
+@import "./patterns/three-links.css";
 
 /* Templates */
 @import "./templates/post-single.css";
 @import "./templates/front-page.css";
+@import "./templates/whats-on.css";

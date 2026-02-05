@@ -1,0 +1,51 @@
+.single-listing .form-field:not(.frm_hidden) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.single-listing input[type="text"],
+.single-listing textarea {
+    color: #1d2939;
+    background-color: #ffffff;
+    border-color: #d0d5dd;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    font-size: inherit;
+    padding: 12px;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: inherit;
+    width: 100%;
+}
+
+.review-fields {
+    width: 100%;
+}
+
+.single-listing .frm_button_submit {
+    width: auto;
+    font-size: 14px;
+    height: auto;
+    line-height: normal;
+    text-align: center;
+    background: rgba(221, 116, 232, 1);
+    border-width: 1px;
+    border-color: #dd74e8;
+    border-style: solid;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: normal;
+    border-radius: 8px;
+    text-shadow: none;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px #eeeeee;
+    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    vertical-align: middle;
+}

@@ -79,3 +79,15 @@
 .frm_forms {
     width: 100%;
 }
+
+.review-fields .frm-star-group .star-rating path {
+    fill: #cbcbcb;
+}
+
+.review-fields .frm-star-group .star-rating-hover path {
+    fill: #b89230;
+}
+
+.review-fields .frm-star-group .star-rating-on path {
+    fill: #b89230;
+}

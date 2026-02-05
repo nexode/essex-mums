@@ -23,3 +23,9 @@ html {
 .gmb {
     margin-bottom: var(--wp--custom--margin--block) !important;
 }
+
+@media ( width < 840px) {
+    .func_mob_hidden {
+        display: none;
+    }
+}
